@@ -3,60 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سورة البقرة - آيات ٢١١-٢١٦ | Surah Al-Baqarah – Verses 211-216</title>
+  <title>سورة البقرة - آيات ٢١١–٢١٥ | Surah Al-Baqarah – Verses 211–215</title>
 
-  <!-- ✅ Quran Icon Cover -->
   <link rel="icon" type="image/png" href="https://i.imgur.com/QNbrNI3.png">
-  <link rel="apple-touch-icon" href="https://i.imgur.com/QNbrNI3.png">
   <meta property="og:image" content="https://i.imgur.com/QNbrNI3.png">
-  <meta property="og:title" content="Surah Al-Baqarah | Page 33 | Verses 211-216">
-  <meta property="og:description" content="Recitation and reflection of Surah Al-Baqarah verses 211-216 with English translation and Abdul Basit audio.">
   <meta name="theme-color" content="#8b4513" />
-
   <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&family=Lato:wght@300;400;600&display=swap" rel="stylesheet"/>
 
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    body{
-      font-family:'Lato',sans-serif;
-      background:linear-gradient(135deg,#667eea,#764ba2);
-      color:#333;line-height:1.8;min-height:100vh;
-      -webkit-font-smoothing:antialiased
-    }
+    body{font-family:'Lato',sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);color:#333;line-height:1.8;min-height:100vh}
     .container{max-width:1200px;margin:auto;padding:20px}
     .navigation{text-align:center;margin-bottom:20px}
-    .nav-link{
-      background:linear-gradient(45deg,#8b4513,#a0522d);
-      color:#fff;text-decoration:none;
-      padding:10px 24px;border-radius:25px;
-      display:inline-block;margin:4px;transition:.3s
-    }
+    .nav-link{background:linear-gradient(45deg,#8b4513,#a0522d);color:#fff;text-decoration:none;padding:10px 24px;border-radius:25px;display:inline-block;margin:4px;transition:.3s}
     .nav-link:hover{transform:translateY(-2px)}
     .header{text-align:center;background:#fffdfd;padding:30px;border-radius:15px;margin-bottom:30px}
     .header img{width:80px;border-radius:50%;margin-bottom:10px}
-    .arabic-title{font-family:'Amiri',serif;font-size:2rem;color:#8b4513;direction:rtl}
+    .arabic-title{font-family:'Amiri',serif;font-size:2rem;color:#8b4513}
     .page-info{color:#555;font-size:.9rem}
-    .audio-player-section,.verses-container,.reflection-section,.footer,.signature{
-      background:#fffdfd;padding:25px;border-radius:15px;margin-bottom:25px
-    }
+    .audio-player-section,.verses-container,.reflection-section,.footer,.signature{background:#fffdfd;padding:25px;border-radius:15px;margin-bottom:25px}
     .verse{margin-bottom:35px;padding:20px;border-left:5px solid #8b4513;border-radius:10px;background:#fafafa}
-    .verse-number{
-      display:inline-block;background:linear-gradient(45deg,#8b4513,#a0522d);
-      color:#fff;padding:5px 14px;border-radius:20px;font-weight:600
-    }
-    .arabic-text{
-      font-family:'Amiri Quran','Amiri',serif;
-      font-size:1.9rem;line-height:2.8;text-align:right;direction:rtl;
-      color:#1a472a;margin:20px 0;padding:20px;background:#f8fdf9;border:2px solid #8b4513;border-radius:8px
-    }
-    .english-text{
-      font-size:1.05rem;color:#444;background:#f8f9fa;padding:15px;border-radius:8px
-    }
+    .verse-number{display:inline-block;background:linear-gradient(45deg,#8b4513,#a0522d);color:#fff;padding:5px 14px;border-radius:20px;font-weight:600}
+    .arabic-text{font-family:'Amiri Quran','Amiri',serif;font-size:1.9rem;line-height:2.8;text-align:right;color:#1a472a;margin:20px 0;padding:20px;background:#f8fdf9;border:2px solid #8b4513;border-radius:8px}
+    .english-text{font-size:1.05rem;color:#444;background:#f8f9fa;padding:15px;border-radius:8px}
     .reflection-section h2{color:#8b4513;text-align:center;margin-bottom:20px}
-    .reflection-point{
-      padding:20px;margin-bottom:20px;border-left:4px solid #a0522d;border-radius:8px;background:linear-gradient(to right,#fff,#f9f9f9)
-    }
-    .reflection-arabic{font-family:'Amiri',serif;font-size:1.2rem;color:#2c3e50;text-align:right;direction:rtl;margin-bottom:10px}
+    .reflection-point{padding:20px;margin-bottom:20px;border-left:4px solid #a0522d;border-radius:8px;background:linear-gradient(to right,#fff,#f9f9f9)}
+    .reflection-arabic{font-family:'Amiri',serif;font-size:1.2rem;color:#2c3e50;text-align:right;margin-bottom:10px}
     .reflection-english{font-size:1rem;color:#555}
     .footer-text{text-align:center;margin:8px 0;font-style:italic}
     .signature{text-align:center}
@@ -70,7 +42,7 @@
     let currentVerse=211;
     function playVerse(v){
       currentVerse=v;
-      const a=document.getElementById("quranAudio"),s=document.getElementById("audioSource");
+      const a=document.getElementById("quranAudio"), s=document.getElementById("audioSource");
       s.src=`https://everyayah.com/data/Abdul_Basit_Murattal_192kbps/002${String(v).padStart(3,"0")}.mp3`;
       a.load();a.play();
       document.querySelectorAll(".verse-btn").forEach(b=>b.classList.remove("active"));
@@ -79,7 +51,7 @@
     document.addEventListener("DOMContentLoaded",()=>{
       const a=document.getElementById("quranAudio");
       a.addEventListener("ended",()=>{
-        if(currentVerse<216){
+        if(currentVerse<215){
           const n=document.querySelector(`[onclick="playVerse(${currentVerse+1})"]`);
           if(n)n.click();
         }
@@ -97,10 +69,10 @@
   </div>
 
   <div class="header">
-    <img src="https://i.imgur.com/QNbrNI3.png" alt="Quran Icon" />
+    <img src="https://i.imgur.com/QNbrNI3.png" alt="Quran Icon"/>
     <div class="arabic-title">سورة البقرة</div>
     <h1>Surah Al-Baqarah (The Cow)</h1>
-    <div class="page-info">Page 33 | Verses 211 – 216</div>
+    <div class="page-info">Page 33 | Verses 211 – 215</div>
   </div>
 
   <div class="audio-player-section" style="text-align:center">
@@ -115,7 +87,6 @@
       <button class="verse-btn" onclick="playVerse(213)">213</button>
       <button class="verse-btn" onclick="playVerse(214)">214</button>
       <button class="verse-btn" onclick="playVerse(215)">215</button>
-      <button class="verse-btn" onclick="playVerse(216)">216</button>
     </div>
   </div>
 
@@ -123,68 +94,53 @@
 
     <div class="verse">
       <span class="verse-number">211</span>
-      <div class="arabic-text">سَلْ بَنِىٓ إِسْرَٰٓءِيلَ كَمْ ءَاتَيْنَـٰهُم مِّنْ ءَايَةٍۢ بَيِّنَةٍۢ ۗ وَمَن يُبَدِّلْ نِعْمَةَ ٱللَّهِ مِنۢ بَعْدِ مَا جَآءَتْهُ فَإِنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ</div>
-      <div class="english-text">Ask the Children of Israel how many a clear sign We gave them. And whoever exchanges the favor of Allah after it has come to him—then indeed, Allah is severe in penalty.</div>
+      <div class="arabic-text">سَلْ بَنِىٓ إِسْرَٰٓءِيلَ كَمْ ءَاتَيْنَٰهُم مِّنْ ءَايَةٍۢ بَيِّنَةٍۢ ۗ وَمَن يُبَدِّلْ نِعْمَةَ ٱللَّهِ مِنۢ بَعْدِ مَا جَآءَتْهُ فَإِنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ</div>
+      <div class="english-text">Ask the Children of Israel how many a clear sign We gave them. And whoever changes the favor of Allah after it has come to him – then indeed, Allah is severe in penalty.</div>
     </div>
 
     <div class="verse">
       <span class="verse-number">212</span>
-      <div class="arabic-text">زُيِّنَ لِلَّذِينَ كَفَرُوا۟ ٱلْحَيَوٰةُ ٱلدُّنْيَا وَيَسْخَرُونَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ ۘ وَٱلَّذِينَ ٱتَّقَوْا۟ فَوْقَهُمْ يَوْمَ ٱلْقِيَـٰمَةِ ۗ وَٱللَّهُ يَرْزُقُ مَن يَشَآءُ بِغَيْرِ حِسَابٍۢ</div>
-      <div class="english-text">Beautified for those who disbelieve is the worldly life, and they ridicule those who believe. But those who fear Allah are above them on the Day of Resurrection. And Allah gives provision to whom He wills without account.</div>
+      <div class="arabic-text">زُيِّنَ لِلَّذِينَ كَفَرُوا۟ ٱلْحَيَوٰةُ ٱلدُّنْيَا وَيَسْخَرُونَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ ۚ وَٱلَّذِينَ ٱتَّقَوْا۟ فَوْقَهُمْ يَوْمَ ٱلْقِيَـٰمَةِ ۗ وَٱللَّهُ يَرْزُقُ مَن يَشَآءُ بِغَيْرِ حِسَابٍۢ</div>
+      <div class="english-text">Beautified for those who disbelieve is the life of this world, and they ridicule those who believe. But those who fear Allah are above them on the Day of Resurrection. And Allah gives provision to whom He wills without account.</div>
     </div>
 
     <div class="verse">
       <span class="verse-number">213</span>
-      <div class="arabic-text">كَانَ ٱلنَّاسُ أُمَّةًۭ وَٰحِدَةًۭ فَبَعَثَ ٱللَّهُ ٱلنَّبِيِّۦنَ مُبَشِّرِينَ وَمُنذِرِينَ وَأَنزَلَ مَعَهُمُ ٱلْكِتَـٰبَ بِٱلْحَقِّ لِيَحْكُمَ بَيْنَ ٱلنَّاسِ فِيمَا ٱخْتَلَفُوا۟ فِيهِ ...</div>
-      <div class="english-text">Mankind was one community; then Allah sent the prophets as bringers of good tidings and warners and sent down with them the Scripture in truth to judge between the people concerning that in which they differed...</div>
+      <div class="arabic-text">كَانَ ٱلنَّاسُ أُمَّةًۭ وَٰحِدَةًۭ فَبَعَثَ ٱللَّهُ ٱلنَّبِيِّۦنَ مُبَشِّرِينَ وَمُنذِرِينَ ... وَٱللَّهُ يَهْدِى مَن يَشَآءُ إِلَىٰ صِرَٰطٍۢ مُّسْتَقِيمٍۢ</div>
+      <div class="english-text">Mankind was [of] one religion [before their deviation]; then Allah sent the prophets as bringers of good tidings and warners... and Allah guides whom He wills to a straight path.</div>
     </div>
 
     <div class="verse">
       <span class="verse-number">214</span>
-      <div class="arabic-text">أَمْ حَسِبْتُمْ أَن تَدْخُلُوا۟ ٱلْجَنَّةَ وَلَمَّا يَأْتِكُم مَّثَلُ ٱلَّذِينَ خَلَوْا۟ مِن قَبْلِكُم ...</div>
-      <div class="english-text">Or do you think that you will enter Paradise while such [trial] has not yet come to you as came to those who passed on before you? They were touched by poverty and hardship and were shaken until [even their] messenger and those who believed with him said, “When is the help of Allah?” Unquestionably, the help of Allah is near.</div>
+      <div class="arabic-text">أَمْ حَسِبْتُمْ أَن تَدْخُلُوا۟ ٱلْجَنَّةَ وَلَمَّا يَأْتِكُم مَّثَلُ ٱلَّذِينَ خَلَوْا۟ مِن قَبْلِكُم ۖ ... أَلَآ إِنَّ نَصْرَ ٱللَّهِ قَرِيبٌۭ</div>
+      <div class="english-text">Or do you think that you will enter Paradise while such [trial] has not yet come to you as came to those who passed on before you?... Unquestionably, the help of Allah is near.</div>
     </div>
 
     <div class="verse">
       <span class="verse-number">215</span>
-      <div class="arabic-text">يَسْـَٔلُونَكَ مَاذَا يُنفِقُونَ ۖ قُلْ مَآ أَنفَقْتُم مِّنْ خَيْرٍۢ فَلِلْوَٰلِدَيْنِ وَٱلْأَقْرَبِينَ وَٱلْيَتَـٰمَىٰ وَٱلْمَسَـٰكِينِ وَٱبْنِ ٱلسَّبِيلِ ...</div>
-      <div class="english-text">They ask you, [O Muhammad], what they should spend. Say, “Whatever you spend of good is [to be] for parents and relatives and orphans and the needy and the traveler. And whatever you do of good - indeed, Allah is Knowing of it.”</div>
+      <div class="arabic-text">يَسْـَٔلُونَكَ مَاذَا يُنفِقُونَ ۖ قُلْ مَآ أَنفَقْتُم مِّنْ خَيْرٍۢ فَلِلْوَٰلِدَيْنِ وَٱلْأَقْرَبِينَ وَٱلْيَتَـٰمَىٰ وَٱلْمَسَـٰكِينِ وَٱبْنِ ٱلسَّبِيلِ ۗ وَمَا تَفْعَلُوا۟ مِنْ خَيْرٍۢ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌۭ</div>
+      <div class="english-text">They ask you, [O Muhammad], what they should spend. Say, “Whatever you spend of good is [to be] for parents and relatives and orphans and the needy and the traveler. And whatever you do of good – indeed, Allah is Knowing of it.”</div>
     </div>
-
-    <div class="verse">
-      <span class="verse-number">216</span>
-      <div class="arabic-text">كُتِبَ عَلَيْكُمُ ٱلْقِتَالُ وَهُوَ كُرْهٌۭ لَّكُمْ ۖ وَعَسَىٰٓ أَن تَكْرَهُوا۟ شَيْـًٔا وَهُوَ خَيْرٌۭ لَّكُمْ ۖ وَعَسَىٰٓ أَن تُحِبُّوا۟ شَيْـًٔا وَهُوَ شَرٌّۭ لَّكُمْ ۗ وَٱللَّهُ يَعْلَمُ وَأَنتُمْ لَا تَعْلَمُونَ</div>
-      <div class="english-text">Fighting has been enjoined upon you while it is hateful to you. But perhaps you hate a thing and it is good for you; and perhaps you love a thing and it is bad for you. And Allah knows, while you know not.</div>
-    </div>
-
   </div>
 
   <div class="reflection-section">
     <h2>💭 تأملات يومية | Daily Reflections</h2>
-
     <div class="reflection-point">
-      <h3>📖 نعمة البيّنة | The Clear Signs of God</h3>
-      <div class="reflection-arabic">بنو إسرائيل رأوا الآيات ثم بدّلوا نعمة الله كفراً – العبرة أن الآيات لا تنفع من يُعرض عن الحق بعد علمه.</div>
-      <div class="reflection-english">The Israelites saw clear signs yet exchanged God’s favor for denial—proof that miracles don’t help one who ignores truth after knowing it.</div>
+      <h3>🌍 الدنيا والآخرة | This World and the Hereafter</h3>
+      <div class="reflection-arabic">الحياة الدنيا فتنة وزينة، لكن العبرة في الآخرة – المؤمن لا يغتر بالزخارف المؤقتة.</div>
+      <div class="reflection-english">Worldly life is glittering temptation; faith looks beyond appearances to eternal reward.</div>
     </div>
 
     <div class="reflection-point">
-      <h3>💎 الابتلاء طريق الجنة | Trials Before Paradise</h3>
-      <div class="reflection-arabic">لن يُنال الفوز إلا بعد الابتلاء – فقد صبر الأنبياء ومن معهم حتى قالوا متى نصر الله ألا إن نصر الله قريب.</div>
-      <div class="reflection-english">No one attains Paradise without trial; the prophets and believers before us endured hardship and cried “When is the help of Allah?” — Indeed His help is near.</div>
-    </div>
-
-    <div class="reflection-point">
-      <h3>⚔️ وعسى أن تكرهوا شيئاً | Perhaps You Hate a Thing</h3>
-      <div class="reflection-arabic">التكليف قد يُخالف الهوى لكن فيه الخير – الله يعلم ما لا نعلم فليكن الثقة به أعظم من ميل النفوس.</div>
-      <div class="reflection-english">Duty may go against desire but it hides goodness—trust Allah’s wisdom more than your own preference.</div>
+      <h3>🕊️ نصر الله قريب | The Help of Allah Is Near</h3>
+      <div class="reflection-arabic">الابتلاء سُنّة، والصبر مفتاح النصر – كلّ تأخير فيه خير.</div>
+      <div class="reflection-english">Trials are pathways to divine help — patience invites victory from the Most Merciful.</div>
     </div>
   </div>
 
   <div class="footer">
-    <div class="footer-text">وَعَسَىٰٓ أَن تَكْرَهُوا۟ شَيْـًٔا وَهُوَ خَيْرٌۭ لَّكُمْ</div>
-    <div class="footer-text">“Perhaps you hate a thing and it is good for you.”</div>
-    <div class="footer-text">May Allah grant us patience and trust in His wisdom 🌙</div>
+    <div class="footer-text">أَلَآ إِنَّ نَصْرَ ٱللَّهِ قَرِيبٌۭ</div>
+    <div class="footer-text">“Indeed, the help of Allah is near.”</div>
   </div>
 
   <div class="signature">
